@@ -1,0 +1,88 @@
+/* Adding background color to the entire category section */
+.category {
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+    background-color: #ffe6e6;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Category header styling */
+  .category-header {
+    margin-bottom: 30px;
+    color: #333;
+    font-size: 2rem;  /* Increased font size */
+    font-weight: bold;  /* Made the font bold */
+    text-transform: uppercase;  /* Made the text uppercase */
+    letter-spacing: 1.5px;  /* Added letter spacing */
+    position: relative;
+  }
+  
+  /* Underline effect for the header */
+  .category-header::after {
+    content: '';
+    width: 60px;  /* Adjust the width as needed */
+    height: 4px;  /* Thickness of the underline */
+    background-color: #ff0066;  /* Underline color */
+    display: block;
+    margin: 10px auto 0;  /* Centered underline */
+    border-radius: 2px;
+  }
+  
+  /* Product grid styling with flexbox */
+  .designcategory-products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  /* Product card styling with improved box shadow and border radius */
+  .designcategory-product {
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    flex: 1 1 calc(25% - 20px);
+    max-width: calc(25% - 20px);
+    background-color: #fff;
+  }
+  
+  /* Hover effect for product card */
+  .designcategory-product:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Card content padding */
+  .card-content {
+    padding: 15px;
+  }
+  
+  /* Design name styling */
+  .design-name {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  /* Design details styling */
+  .design-details {
+    color: #666;
+    margin: 10px 0;
+  }
+  
+  /* Vote button styling with background color and hover effect */
+  .vote-button {
+    margin-top: 10px;
+    background-color: #ff0066;
+    color: white;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  /* Hover effect for vote button */
+  .vote-button:hover {
+    background-color: #d40052;
+  }
+  
