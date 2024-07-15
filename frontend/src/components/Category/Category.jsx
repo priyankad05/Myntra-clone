@@ -9,6 +9,7 @@ const Category = (props) => {
   const [localVotes, setLocalVotes] = useState({});
 
   useEffect(() => {
+    window.scrollTo(0, 0);
     const initialVotes = {};
     all_designs.forEach((design) => {
       initialVotes[design._id] = design.votes;
@@ -86,8 +87,8 @@ const Category = (props) => {
                       {item.name}
                     </Typography>
                     <Typography variant="body2" className="design-details">
-                      <p>{item.gender}</p>
-                      <p>{item.category}</p>
+                      <p>Category:{item.gender}</p>
+                      
                       <p>Votes: {localVotes[item._id] || item.votes}</p>
                     </Typography>
                     <Button
