@@ -8,8 +8,9 @@ const DesignForm = () => {
   const [designDetails, setDesignDetails] = useState({
     name: "",
     image: "",
-    category: "",
-    gender: ""
+    category: "pant",
+    gender: "women",
+    
   });
 
   const imageHandler = (e) => {
@@ -114,7 +115,7 @@ const DesignForm = () => {
             <label htmlFor="gender">Gender:</label>
             <select
               name="gender"
-              className="designSelector"
+              className="designSelect"
               id="gender"
               value={designDetails.gender}
               onChange={changeHandler}
@@ -125,6 +126,31 @@ const DesignForm = () => {
               <option value="boy">Boys</option>
             </select>
           </div>
+        </div>
+        <div>
+          <label htmlFor="email">Email:</label>
+          <input
+            
+            
+            type="email"
+            name="email"
+            id="email"
+            autoComplete="email"
+            className="designInput" // Added class for consistent styling
+            required
+          />
+        </div>
+        <div>
+          <label htmlFor="phone">Phone Number:</label>
+          <input
+            
+            type="tel"
+            name="phone"
+            id="phone"
+            autoComplete="tel"
+            className="designInput" // Added class for consistent styling
+            required
+          />
         </div>
         <div>
           <label htmlFor="file-input">

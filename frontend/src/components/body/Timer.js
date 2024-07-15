@@ -36,7 +36,7 @@ function Timer() {
     return (
         <div style={{ backgroundColor: '#F0FFFF', padding: '5px' }} className='text-center'>
             <p style={{ fontSize: '30px', color: 'black' }}>
-                Sale Ends In <b>{`${hour} h: ${min} m: ${sec} s`}</b>
+                Voting Ends In <b>{`${hour} h: ${min} m: ${sec} s`}</b>
             </p>
         </div>
     );
