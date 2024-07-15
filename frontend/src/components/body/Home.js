@@ -1,14 +1,14 @@
-import React from 'react'
-import BodyMain from './BodyMain'
-import Footer from '../footer/Footer'
+import React from 'react';
+import Timer from '../components/Timer';
+import ImageCarousel from '../components/ImageCarousel';
 
 function Home() {
-  return (
-    <div>
-     <BodyMain />
-      <hr />
-    </div>
-  )
+    return (
+        <div>
+            <Timer />
+            <ImageCarousel />
+        </div>
+    );
 }
 
-export default Home
+export default Home;
